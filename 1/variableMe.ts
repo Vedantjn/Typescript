@@ -11,5 +11,14 @@ let userId3 = 123123;
 let isLoggedIn: boolean = false;
 
 
+// any
+// let hero;
+let hero: string;
+
+function getHero(){
+    return "thor";
+}
+hero = getHero();
+
 
 export {}
