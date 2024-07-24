@@ -1,1 +1,1 @@
-Resource I'm following: Hitest Chaudhary -> https://www.youtube.com/watch?v=30LWjhZzg50
+Resource I'm following: Hitesh Chaudhary -> https://www.youtube.com/watch?v=30LWjhZzg50
