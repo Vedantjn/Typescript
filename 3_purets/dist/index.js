@@ -1,3 +1,10 @@
 "use strict";
-console.log("TS is here still");
-console.log("Cool");
+class User {
+    constructor(email, name) {
+        this.city = "";
+        this.email = email;
+        this.name = name;
+    }
+}
+const vedant = new User("vedant@gmail.com", "vedantjn");
+vedant.city = "Indore";
