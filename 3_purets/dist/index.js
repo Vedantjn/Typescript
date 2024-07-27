@@ -20,9 +20,14 @@ class User {
     constructor(email, name) {
         this.email = email;
         this.name = name;
+        this._courseCount = 1;
         this.city = "Indore";
-        this.email = email;
-        this.name = name;
+    }
+    get getAppleEmail() {
+        return `apple ${this.email}`;
+    }
+    get courseCount() {
+        return this._courseCount;
     }
 }
 const vedant = new User("vedant@gmail.com", "vedantjn");
