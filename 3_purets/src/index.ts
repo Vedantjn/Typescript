@@ -23,7 +23,7 @@
 
 class User {
 
-    private _courseCount = 1
+    protected _courseCount = 1
 
     readonly city: string = "Indore"
     constructor(
@@ -45,13 +45,22 @@ class User {
         return this._courseCount
     }
 
-    set courseCount(courseNum): void {
+    set courseCount(courseNum) {
         if(courseNum <= 1){
             throw new Error("Course Count should be more than 1")
         }
         this._courseCount = courseNum
     }
 }
+
+class SubUser extends User {
+    isFamil: boolean = true
+    changeCourseCount(){
+        this._courseCount = 4
+    }
+}
+
+
 
 const vedant = new User("vedant@gmail.com", "vedantjn")
 // vedant.city = "Indore"
