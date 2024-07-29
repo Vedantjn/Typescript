@@ -27,4 +27,22 @@ interface Bottle{
     type: number
 }
 
-identityFour<Bottle>({})
+// identityFour<Bottle>({})
+
+function getSearchProducts<T>(products: T[]): T {
+    // do some database operations
+    const myIndex = 3
+    return products[myIndex]
+}
+
+const getMoreSearchProducts1 = (products: number[]): number => {
+    // do some database operations
+    const myIndex = 4
+    return products[myIndex]
+}
+
+const getMoreSearchProducts2 = <T>(products: T[]): T => {
+    // do some database operations
+    const myIndex = 4
+    return products[myIndex]
+}
