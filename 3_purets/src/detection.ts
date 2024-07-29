@@ -28,6 +28,8 @@ function printAll(strs: string | string[] | null) {
     }
 }
 
+// in operator narrowing
+
 interface User {
     name: string,
     email: string
